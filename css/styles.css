@@ -1,0 +1,9 @@
+nav {
+  background-color: #002147; /* Oxford Blue */
+  padding: 1rem;
+}
+nav a {
+  color: #FFD700; /* Gold */
+  text-decoration: none;
+  margin-right: 20px;
+}
