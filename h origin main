@@ -1,0 +1,23 @@
+[33mcommit 4dfb451e01e242c468feb46d2e23d3ee9f608248[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Tevin Master <Mastertevin.7@gmail.com>
+Date:   Mon Mar 31 22:57:00 2025 +0200
+
+    Style navigation bar with brand colors
+
+[33mcommit 709e622345f95b8be7b91d029c6a3c9def571429[m
+Author: Tevin Master <Mastertevin.7@gmail.com>
+Date:   Mon Mar 31 22:52:07 2025 +0200
+
+    Add homepage content
+
+[33mcommit a6763579acd4741ae71e9c837a13fb8cd57319ea[m
+Author: Tevin Master <Mastertevin.7@gmail.com>
+Date:   Mon Mar 31 22:07:38 2025 +0200
+
+    t branch -M main
+    git branch -M main
+    git remote add origin
+    https://github.com/HusltersVault/MnisleyFinance.git
+    git push -uf origin main
+    git log
+    cd ~/Desktop/MnisleyFinance

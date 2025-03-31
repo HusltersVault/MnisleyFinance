@@ -1,9 +1,164 @@
-nav {
-  background-color: #002147; /* Oxford Blue */
-  padding: 1rem;
+/* === Base Styles === */
+:root {
+    --oxford-blue: #002147;
+    --gold: #FFD700;
+    --light-gray: #F5F5F5;
+    --dark-gray: #333;
+    --transition: all 0.3s ease;
 }
-nav a {
-  color: #FFD700; /* Gold */
-  text-decoration: none;
-  margin-right: 20px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
+
+body {
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+/* === Modern Navigation === */
+.navbar {
+    background: linear-gradient(90deg, var(--oxford-blue) 0%, #001a36 100%);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.cta-button {
+    background: var(--gold);
+    color: var(--oxford-blue) !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* === Hero Section === */
+.hero {
+    background: linear-gradient(rgba(0,33,71,0.9), rgba(0,33,71,0.8)), 
+                url('assets/images/hero-bg.jpg') center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+/* === Modern Calculator === */
+.calculator-section {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--oxford-blue);
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--gold);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-value {
+    font-size: 1.2rem;
+    color: var(--oxford-blue);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* === Add to your existing styles.css === */
